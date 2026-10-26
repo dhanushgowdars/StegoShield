@@ -20,6 +20,46 @@
 
 ---
 
+## Application Screenshots
+
+These screenshots show StegoShield running locally, including message embedding and successful extraction. Click an image to view it at full size.
+
+<p align="center">
+  <a href="docs/screenshots/dashboard.png">
+    <img src="docs/screenshots/dashboard.png" alt="StegoShield dashboard with four carrier formats" width="930"/>
+  </a>
+</p>
+<p align="center"><em>StegoShield dashboard — choose Image, Audio, Video, or Text and hide or recover a message.</em></p>
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="docs/screenshots/image-embedding.png"><img src="docs/screenshots/image-embedding.png" alt="Image steganography success with original and encoded butterfly previews"/></a>
+      <br/><strong>Image — successful LSB embedding.</strong><br/>
+      The original and encoded PNG images look virtually identical.
+    </td>
+    <td width="50%" valign="top">
+      <a href="docs/screenshots/audio-embedding.png"><img src="docs/screenshots/audio-embedding.png" alt="Audio steganography with original and encoded audio players"/></a>
+      <br/><strong>Audio — successful WAV embedding.</strong><br/>
+      Play and compare the original and encoded sound.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="docs/screenshots/video-extraction.png"><img src="docs/screenshots/video-extraction.png" alt="Recovered message from lossless encoded video"/></a>
+      <br/><strong>Video — secret message recovered.</strong><br/>
+      First-frame LSB extraction from the generated FFV1/MKV file.
+    </td>
+    <td width="50%" valign="top">
+      <a href="docs/screenshots/text-extraction.png"><img src="docs/screenshots/text-extraction.png" alt="Recovered hidden message from text steganography"/></a>
+      <br/><strong>Text — secret message recovered.</strong><br/>
+      Whitespace-encoded TXT file decoded successfully.
+    </td>
+  </tr>
+</table>
+
+**Validation:** all four formats passed manual hide/extract demonstrations. The project's test suite also completed **25/25 tests** successfully.
+
 ## Overview
 
 **StegoShield** is a Python application that demonstrates **steganography**: hiding information *inside* an ordinary digital carrier so the carrier can still be viewed, played, or read. It provides a single Streamlit dashboard for **encoding** a secret message into a file and **decoding** it afterward.
