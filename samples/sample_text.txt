@@ -1,0 +1,2 @@
+The class assignment demonstrates information hiding in digital media.
+This document contains the public version of the demonstration notes.
